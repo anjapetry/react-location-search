@@ -1,7 +1,16 @@
+import type { Place } from "./api/Place";
+import LocationSearch from "./components/LocationSearch";
+import Map from "./components/Map";
+
 function App() {
     return (
-        <div>
-            <h1 className="m-4">Hi there!</h1>
+        <div className='h-screen w-screen grid grid-cols-12'>
+            <div className='col-span-3'>
+                <LocationSearch />
+            </div>
+            <div className='col-span-9'>
+                <Map />
+            </div>
         </div>
     );
 }
