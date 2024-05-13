@@ -1,6 +1,9 @@
 import type { Place } from "../api/Place";
 
-const Map = () => {
+interface MapProps {
+    place: Place | null;
+}
+const Map = ({ place }: MapProps) => {
     return <div>Map</div>;
 };
 
